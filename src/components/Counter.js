@@ -10,7 +10,8 @@ class Counter extends Component {
       this.setState((state, props)=>({
         count : state.count + Number(props.increment)
       }));
-      /*this.setState(function(state, props) {
+      /* 동일
+        this.setState(function(state, props) {
         return {
           count : state.count + Number(props.increment)
         }
@@ -26,7 +27,7 @@ class Counter extends Component {
     componentWillUnmount() {}
   
     render() {
-      return (this.state.count);
+      return <div>Count : {this.state.count}</div>;
     }
 }
 
